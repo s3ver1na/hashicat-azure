@@ -1,10 +1,10 @@
 provider "azurerm" {
-  version = "=2.1.0"
+   features {}
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
   name     = "${var.prefix}-workshop"
-  location = var.location
+  location = var.locationgit
 }
 
 resource "azurerm_virtual_network" "vnet" {
